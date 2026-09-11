@@ -3,7 +3,7 @@ from models.contribution import Contribution
 
 
 class Member:
-    def _init_(self, name, role, salt, password, contributions=None):
+    def __init__(self, name, role, salt, password, contributions=None):
         self.name = name
         self.role = role
         self.salt = salt
